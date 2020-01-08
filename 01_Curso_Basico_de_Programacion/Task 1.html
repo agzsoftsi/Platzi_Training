@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Peso planetas</title>
+  </head>
+  <body>
+    <h1>Do you know your weight in another planet?</h1>
+    <script type="text/javascript">
+      var w_earth = 9.8;
+      var w_mart = 3.7;
+      var w_jupiter = 24.8;
+      var w_user = parseInt(prompt("Enter your Weight in kg"));
+      var planet = parseInt(prompt("Enter number of planet :\n 1 - Earth\n 2 - Mart\n 3 - Jupiter"));
+
+      if (planet == 1)
+      {
+        var w_convert = w_user;
+        var n_planet = "Earth";
+      }
+      else if (planet == 2)
+      {
+        var w_convert = parseInt((w_user * w_mart) / w_earth);
+        var n_planet = "Mart";
+      }
+      else if (planet == 3)
+      {
+        var w_convert = parseInt((w_user * w_jupiter) / w_earth);
+        var n_planet = "Jupiter";
+      }
+      else
+      {
+        var w_convert = "No Valid"
+        var n_planet = "No Valid";
+      }
+
+      document.write("Tu Peso es " + w_user + " kg in the Earth and convert it to " + n_planet + " is of " + w_convert + " kg " );
+
+    </script>
+
+  </body>
+</html>

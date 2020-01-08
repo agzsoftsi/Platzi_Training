@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> What is your weight in other planet?</title>
+  </head>
+  <body>
+    <h1>What is your Weight in other planet?</h1>
+  <!--  <script type="text/javascript">
+      /* Form1 - create a script to shows the weight in an alert*/
+      var w_earth = 9.8;
+      var w_mart = 3.7;
+      var my_w = 80;
+      var Calculate_w;
+      Calculate_w = (my_w * w_mart) / w_earth;
+      alert("My Weight in Mart is " + Calculate_w + " kg");
+    </script> -->
+
+
+  <!--  <script type="text/javascript">
+        /* Form2 - create a script to shows the weight in a write with html tags*/
+        var w_earth = 9.8;
+        var w_mart = 3.7;
+        var my_w = 80;
+        var Calculate_w;
+        Calculate_w = (my_w * w_mart) / w_earth;
+        document.write("My Weight in Mart is <strong>" + Calculate_w + " kg</strong>");
+      </script> -->
+
+    <!--  <script type="text/javascript">
+            /* Form3 - create a script to shows the weight in a write with html tags - using parseInt*/
+            var w_earth = 9.8;
+            var w_mart = 3.7;
+            var my_w = 80;
+            var Calculate_w;
+            Calculate_w = (my_w * w_mart) / w_earth;
+            document.write("My Weight in Mart is <strong>" + parseInt(Calculate_w) + " kg</strong>");
+          </script> -->
+
+        <!--  <script type="text/javascript">
+                  /* Form4 - create a script to shows the weight in a write with html tags - using parseInt - enter de weight*/
+                  var w_earth = 9.8;
+                  var w_mart = 3.7;
+                  var my_w = prompt("digit your weight?");
+                  var Calculate_w;
+                  Calculate_w = (parseInt(my_w) * w_mart) / w_earth;
+                  document.write("My Weight in Mart is <strong>" + parseInt(Calculate_w) + " kg</strong>");
+                </script>  -->
+
+
+                <script type="text/javascript">
+                          /* Form5 - create a script to shows the weight in a write with html tags - using parseFloat with two decimals- enter de weight*/
+                          var w_earth = 9.8;
+                          var w_mart = 3.7;
+                          var my_w = prompt("digit your weight?");
+                          var Calculate_w;
+                          Calculate_w = (parseFloat(my_w) * w_mart) / w_earth;
+                          document.write("My Weight in Mart is <strong>" + parseFloat(Calculate_w).toFixed(2) + " kg</strong>");
+                        </script>
+  </body>
+</html>
